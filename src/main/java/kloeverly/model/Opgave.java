@@ -1,17 +1,9 @@
 package kloeverly.model;
 
 import java.time.LocalDate;
+import java.io.Serializable;
 
-/**
- * Fælles superklasse for de tre opgavetyper: GroentTiltag, Faellesopgave og Bytteopgave (FR14-FR16).
- *
- * Klassen er abstrakt, fordi en opgave altid er én af de tre typer.
- * Man kan derfor ikke skrive "new Opgave(...)" - kun "new Faellesopgave(...)" osv.
- *
- * Point er altid et positivt tal. Det er Beboer, der afgør, om pointene lægges til
- * (Faellesopgave) eller trækkes fra (Bytteopgave).
- */
-public abstract class Opgave
+public abstract class Opgave implements Serializable
 {
   private String beskrivelse;
   private LocalDate dato;
@@ -21,10 +13,16 @@ public abstract class Opgave
   {
     setBeskrivelse(beskrivelse);
     setDato(dato);
+    setPoint(point);
+  }
+
+  public void setPoint(int point)
+  {
     if (point <= 0)
     {
       throw new IllegalArgumentException("Point skal være et positivt tal.");
     }
+
     this.point = point;
   }
 
@@ -61,11 +59,7 @@ public abstract class Opgave
     this.dato = dato;
   }
 
-  // Der er bevidst ingen setPoint(): når en opgave har givet point, ligger de i en
-  // Pointpostering. Skal pointene ændres, slettes opgaven og oprettes på ny.
-
-  @Override
-  public String toString()
+  @Override public String toString()
   {
     return dato + " - " + beskrivelse + " (" + point + " point)";
   }

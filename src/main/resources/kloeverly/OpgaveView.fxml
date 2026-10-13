@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="kloeverly.controller.OpgaveController">
+
+    <left>
+        <fx:include source="Sidebar.fxml"/>
+    </left>
+
+    <center>
+        <VBox spacing="18"
+              styleClass="page-content">
+
+            <HBox alignment="CENTER_LEFT">
+
+                <VBox spacing="3">
+                    <Label text="Opgaver"
+                           styleClass="page-title"/>
+
+                    <Label text="Fællesopgaver, grønne tiltag og bytteopgaver"
+                           styleClass="page-subtitle"/>
+                </VBox>
+
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <Button text="+ Opret opgave"
+                        onAction="#opretOpgave"
+                        styleClass="primary-button"/>
+
+            </HBox>
+
+            <VBox spacing="10"
+                  styleClass="card">
+
+                <Label text="Registrerede opgaver"
+                       styleClass="section-title"/>
+
+                <ListView fx:id="opgaveListView"
+                          prefHeight="420"/>
+
+                <HBox spacing="8">
+
+                    <Button text="Afslut opgave"
+                            onAction="#afslutOpgave"
+                            styleClass="primary-button"/>
+
+                    <Button text="Rediger"
+                            onAction="#redigerOpgave"
+                            styleClass="secondary-button"/>
+
+                    <Button text="Slet"
+                            onAction="#sletOpgave"
+                            styleClass="danger-button"/>
+
+                </HBox>
+
+            </VBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

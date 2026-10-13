@@ -3,12 +3,9 @@ package kloeverly.model;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.io.Serializable;
 
-/**
- * Kløverlys fælles pointpulje (FR11, FR14).
- * Modtager point fra grønne tiltag. Puljen kan kun vokse.
- */
-public class FaellesPointpulje
+public class FaellesPointpulje implements Serializable
 {
   private List<Pointpostering> pointposteringer;
 
@@ -25,7 +22,8 @@ public class FaellesPointpulje
     }
     if (postering.getAntalPoint() <= 0)
     {
-      throw new IllegalArgumentException("Fællespuljen kan kun modtage positive point.");
+      throw new IllegalArgumentException(
+          "Fællespuljen kan kun modtage positive point.");
     }
     pointposteringer.add(postering);
   }
@@ -40,12 +38,15 @@ public class FaellesPointpulje
     return sum;
   }
 
-  /**
-   * Returnerer en liste, der ikke kan ændres udefra.
-   * Så kan ingen komme uden om reglerne i tilføjPointpostering().
-   */
   public List<Pointpostering> getPointposteringer()
   {
     return Collections.unmodifiableList(pointposteringer);
+  }
+
+  public void fjernPointposteringerForOpgave(Opgave opgave)
+  {
+    pointposteringer.removeIf(
+        postering -> postering.getOpgave() == opgave
+    );
   }
 }

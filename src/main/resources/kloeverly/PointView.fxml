@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="kloeverly.controller.PointController">
+
+    <left>
+        <fx:include source="Sidebar.fxml"/>
+    </left>
+
+    <center>
+        <VBox spacing="18"
+              styleClass="page-content">
+
+            <VBox spacing="3">
+                <Label text="Point"
+                       styleClass="page-title"/>
+
+                <Label text="Administrer personlige og fælles point"
+                       styleClass="page-subtitle"/>
+            </VBox>
+
+            <VBox spacing="14"
+                  styleClass="card">
+
+                <HBox spacing="10">
+
+                    <Label text="Beboer"
+                           styleClass="section-title"/>
+
+                    <ComboBox fx:id="beboerComboBox"
+                              prefWidth="240"/>
+
+                </HBox>
+
+                <HBox spacing="12">
+
+                    <VBox spacing="3"
+                          prefWidth="220"
+                          styleClass="stat-card">
+
+                        <Label text="Personlige point"
+                               styleClass="stat-label"/>
+
+                        <Label fx:id="personligePointLabel"
+                               text="0"
+                               styleClass="stat-number"/>
+
+                    </VBox>
+
+                    <VBox spacing="3"
+                          prefWidth="220"
+                          styleClass="stat-card">
+
+                        <Label text="Fælles pointpulje"
+                               styleClass="stat-label"/>
+
+                        <Label fx:id="faellesPointLabel"
+                               text="0"
+                               styleClass="stat-number"/>
+
+                    </VBox>
+
+                </HBox>
+
+                <Label text="Pointposteringer"
+                       styleClass="section-title"/>
+
+                <ListView fx:id="pointposteringListView"
+                          prefHeight="275"/>
+
+                <HBox spacing="8">
+
+                    <Button text="+ Manuel pointkorrektion"
+                            onAction="#registrerPointaendring"
+                            styleClass="primary-button"/>
+
+                    <Button text="Nulstil personlige point"
+                            onAction="#nulstilPoint"
+                            styleClass="secondary-button"/>
+
+                </HBox>
+
+            </VBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="kloeverly.controller.RapportController">
+
+    <left>
+        <fx:include source="Sidebar.fxml"/>
+    </left>
+
+    <center>
+        <VBox spacing="18"
+              styleClass="page-content">
+
+            <VBox spacing="3">
+                <Label text="Rapport"
+                       styleClass="page-title"/>
+
+                <Label text="Samlet overblik over Kløverly"
+                       styleClass="page-subtitle"/>
+            </VBox>
+
+            <HBox spacing="10">
+
+                <VBox spacing="3"
+                      prefWidth="165"
+                      styleClass="stat-card">
+
+                    <Label text="Beboere"
+                           styleClass="stat-label"/>
+
+                    <Label fx:id="antalBeboereLabel"
+                           text="0"
+                           styleClass="stat-number"/>
+                </VBox>
+
+                <VBox spacing="3"
+                      prefWidth="165"
+                      styleClass="stat-card">
+
+                    <Label text="Udførte opgaver i alt"
+                           styleClass="stat-label"/>
+
+                    <Label fx:id="antalOpgaverLabel"
+                           text="0"
+                           styleClass="stat-number"/>
+                </VBox>
+
+                <VBox spacing="3"
+                      prefWidth="165"
+                      styleClass="stat-card">
+
+                    <Label text="Nuværende personlige point"
+                           styleClass="stat-label"/>
+
+                    <Label fx:id="personligePointLabel"
+                           text="0"
+                           styleClass="stat-number"/>
+                </VBox>
+
+                <VBox spacing="3"
+                      prefWidth="165"
+                      styleClass="stat-card">
+
+                    <Label text="Fælles point"
+                           styleClass="stat-label"/>
+
+                    <Label fx:id="faellesPointLabel"
+                           text="0"
+                           styleClass="stat-number"/>
+                </VBox>
+
+            </HBox>
+
+            <VBox spacing="10"
+                  styleClass="card">
+
+                <Label text="Udførte opgaver pr. beboer"
+                       styleClass="section-title"/>
+
+                <ListView fx:id="beboerRapportList"
+                          prefHeight="340"/>
+
+            </VBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

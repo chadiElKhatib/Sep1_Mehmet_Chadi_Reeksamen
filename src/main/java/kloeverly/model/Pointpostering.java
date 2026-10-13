@@ -1,16 +1,9 @@
 package kloeverly.model;
 
 import java.time.LocalDate;
+import java.io.Serializable;
 
-/**
- * Én ændring af point - som en linje i et kontoudtog.
- * Positivt antalPoint = point optjent, negativt = point brugt eller nulstillet.
- *
- * Feltet opgave er associationen "medfører" fra klassediagrammet: den opgave,
- * der gav posteringen. Det er null, når posteringen ikke kommer fra en opgave
- * (fx ved nulstilling, FR18).
- */
-public class Pointpostering
+public class Pointpostering implements Serializable
 {
   private LocalDate dato;
   private int antalPoint;
@@ -53,8 +46,7 @@ public class Pointpostering
     return opgave;
   }
 
-  @Override
-  public String toString()
+  @Override public String toString()
   {
     return dato + ": " + antalPoint + " point - " + årsag;
   }
