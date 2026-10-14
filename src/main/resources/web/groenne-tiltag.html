@@ -110,9 +110,7 @@
 
             <div class="green-summary-card">
 
-                <span class="summary-number">
-                    1
-                </span>
+                <span class="summary-number" id="antal-groenne-tiltag">–</span>
 
                 <span class="summary-label">
                     Grønne tiltag
@@ -123,9 +121,7 @@
 
             <div class="green-summary-card">
 
-                <span class="summary-number">
-                    10
-                </span>
+                <span class="summary-number" id="faelles-point">–</span>
 
                 <span class="summary-label">
                     Point i fællespuljen
@@ -166,53 +162,8 @@
             </div>
 
 
-            <div class="tiltag-grid">
-
-                <article class="tiltag-card">
-
-    <span class="tiltag-badge">
-        GRØNT TILTAG
-    </span>
-
-    <h3>
-Slå græs    </h3>
-
-
-    <div class="tiltag-info">
-
-
-        <p>
-
-            <strong>
-                Dato
-            </strong>
-
-            <span>
-13. oktober 2026            </span>
-
-        </p>
-
-
-        <p>
-
-            <strong>
-                Bidrag til fællesskabet
-            </strong>
-
-            <span class="point-value">
-                +
-10                point
-            </span>
-
-        </p>
-
-
-    </div>
-
-</article>
-
-
-            </div>
+            <!-- Kortene laves af kloeverly.js ud fra data.json -->
+            <div class="tiltag-grid" id="tiltag-liste"></div>
 
 
             <a
@@ -245,6 +196,8 @@ Slå græs    </h3>
 
 </footer>
 
+
+<script src="kloeverly.js"></script>
 
 </body>
 
