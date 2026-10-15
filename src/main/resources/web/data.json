@@ -1,0 +1,9 @@
+{
+  "antalBeboere": 3,
+  "udfoerteOpgaver": 2,
+  "personligePoint": 10,
+  "faellesPoint": 10,
+  "groenneTiltag": [
+    { "beskrivelse": "Slå græs", "dato": "2026-10-13", "point": 10 }
+  ]
+}
