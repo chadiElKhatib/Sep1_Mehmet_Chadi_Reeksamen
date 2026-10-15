@@ -1,12 +1,3 @@
-/*
- * Kløverly – hjemmesidens JavaScript (FR13, FR17).
- *
- * Henter data.json, som Java-programmet skriver, når der gemmes,
- * og sætter tallene og de grønne tiltag ind på siden.
- * Begge sider bruger denne fil. Hver funktion udfylder kun de
- * elementer, der findes på den aktuelle side.
- */
-
 document.addEventListener("DOMContentLoaded", hentData);
 
 function hentData()
@@ -32,7 +23,6 @@ function hentData()
     });
 }
 
-/* Sætter et tal ind i elementet med det givne id, hvis det findes. */
 function saetTal(id, vaerdi)
 {
   var element = document.getElementById(id);
@@ -42,7 +32,6 @@ function saetTal(id, vaerdi)
   }
 }
 
-/* Forsiden og oversigten på siden med grønne tiltag. */
 function visTal(data)
 {
   saetTal("antal-beboere", data.antalBeboere);
@@ -52,7 +41,6 @@ function visTal(data)
   saetTal("antal-groenne-tiltag", data.groenneTiltag.length);
 }
 
-/* Laver ét kort pr. grønt tiltag. Navne findes ikke i data (NFR06). */
 function visGroenneTiltag(tiltag)
 {
   var liste = document.getElementById("tiltag-liste");

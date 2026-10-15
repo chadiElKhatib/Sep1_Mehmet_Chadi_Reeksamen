@@ -37,16 +37,17 @@ public class MainController
 
   private void opdaterDashboard()
   {
-    int antalOpgaver = 0;
     int personligePoint = 0;
 
     List<Opgave> alleOpgaver = new ArrayList<>();
 
+    // Fællesopgaver og grønne tiltag
+    alleOpgaver.addAll(AppData.getAktiveOpgaver());
+
+    // Bytteopgaver + personlige point
     for (Beboer beboer : AppData.getBeboere())
     {
-      antalOpgaver += beboer.getOpgaver().size();
       personligePoint += beboer.beregnPersonligePoint();
-
       alleOpgaver.addAll(beboer.getOpgaver());
     }
 
@@ -55,7 +56,7 @@ public class MainController
     );
 
     antalOpgaverLabel.setText(
-        String.valueOf(antalOpgaver)
+        String.valueOf(alleOpgaver.size())
     );
 
     personligePointLabel.setText(
@@ -64,8 +65,7 @@ public class MainController
 
     faellesPointLabel.setText(
         String.valueOf(
-            AppData.getFaellesPointpulje()
-                .beregnSamledePoint()
+            AppData.getFaellesPointpulje().beregnSamledePoint()
         )
     );
 
