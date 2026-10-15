@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="1462" font-family="Arial, Helvetica, sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<defs><marker id="f" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#000"/></marker><marker id="o" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8" fill="none" stroke="#000"/></marker></defs>
+<circle cx="70" cy="18" r="7" fill="none" stroke="#000"/><line x1="70" y1="25" x2="70" y2="42" stroke="#000"/><line x1="58" y1="31" x2="82" y2="31" stroke="#000"/><line x1="70" y1="42" x2="61" y2="54" stroke="#000"/><line x1="70" y1="42" x2="79" y2="54" stroke="#000"/>
+<text x="70" y="68" text-anchor="middle">Bruger : Actor</text>
+<line x1="70" y1="75" x2="70" y2="1452" stroke="#000" stroke-dasharray="6,4"/>
+<rect x="198" y="30" width="142" height="28" fill="#FFFFCC" stroke="#000" stroke-width="1.5"/><text x="270" y="49" text-anchor="middle">OpgaveController</text>
+<line x1="270" y1="75" x2="270" y2="1452" stroke="#000" stroke-dasharray="6,4"/>
+<rect x="445" y="30" width="68" height="28" fill="#FFFFCC" stroke="#000" stroke-width="1.5"/><text x="480" y="49" text-anchor="middle">Opgave</text>
+<line x1="480" y1="75" x2="480" y2="1452" stroke="#000" stroke-dasharray="6,4"/>
+<rect x="605" y="30" width="68" height="28" fill="#FFFFCC" stroke="#000" stroke-width="1.5"/><text x="640" y="49" text-anchor="middle">Beboer</text>
+<line x1="640" y1="75" x2="640" y2="1452" stroke="#000" stroke-dasharray="6,4"/>
+<rect x="762" y="30" width="75" height="28" fill="#FFFFCC" stroke="#000" stroke-width="1.5"/><text x="800" y="49" text-anchor="middle">AppData</text>
+<line x1="800" y1="75" x2="800" y2="1452" stroke="#000" stroke-dasharray="6,4"/>
+<rect x="892" y="30" width="135" height="28" fill="#FFFFCC" stroke="#000" stroke-width="1.5"/><text x="960" y="49" text-anchor="middle">FileDataManager</text>
+<line x1="960" y1="75" x2="960" y2="1452" stroke="#000" stroke-dasharray="6,4"/>
+<rect x="64" y="104" width="12" height="1334" fill="white" stroke="#000"/>
+<rect x="264" y="1232" width="12" height="30" fill="white" stroke="#000"/>
+<rect x="264" y="104" width="12" height="1334" fill="white" stroke="#000"/>
+<rect x="474" y="540" width="12" height="48" fill="white" stroke="#000"/>
+<rect x="474" y="698" width="12" height="48" fill="white" stroke="#000"/>
+<rect x="474" y="856" width="12" height="48" fill="white" stroke="#000"/>
+<rect x="634" y="972" width="12" height="30" fill="white" stroke="#000"/>
+<rect x="634" y="928" width="12" height="92" fill="white" stroke="#000"/>
+<rect x="794" y="612" width="12" height="26" fill="white" stroke="#000"/>
+<rect x="794" y="770" width="12" height="26" fill="white" stroke="#000"/>
+<rect x="794" y="1080" width="12" height="120" fill="white" stroke="#000"/>
+<rect x="954" y="1116" width="12" height="48" fill="white" stroke="#000"/>
+<rect x="30" y="276" width="300" height="92" fill="none" stroke="#000"/>
+<path d="M30,276 h34 v12 l-7,7 h-27 z" fill="white" stroke="#000"/><text x="35" y="290" font-weight="bold">opt</text>
+<text x="72" y="291" fill="#004">[Bytteopgave]</text>
+<rect x="218" y="500" width="634" height="560" fill="none" stroke="#000"/>
+<path d="M218,500 h34 v12 l-7,7 h-27 z" fill="white" stroke="#000"/><text x="223" y="514" font-weight="bold">alt</text>
+<text x="260" y="515" fill="#004">[Fællesopgave]</text>
+<line x1="218" y1="662" x2="852" y2="662" stroke="#000" stroke-dasharray="7,4"/><text x="224" y="678" fill="#004">[Grønt tiltag]</text>
+<line x1="218" y1="820" x2="852" y2="820" stroke="#000" stroke-dasharray="7,4"/><text x="224" y="836" fill="#004">[Bytteopgave]</text>
+<rect x="30" y="442" width="990" height="964" fill="none" stroke="#000"/>
+<path d="M30,442 h34 v12 l-7,7 h-27 z" fill="white" stroke="#000"/><text x="35" y="456" font-weight="bold">alt</text>
+<text x="72" y="457" fill="#004">[Gyldige oplysninger og nok point]</text>
+<line x1="30" y1="1318" x2="1020" y2="1318" stroke="#000" stroke-dasharray="7,4"/><text x="36" y="1334" fill="#004">[Ugyldige oplysninger eller for få point]</text>
+<line x1="76" y1="120" x2="264" y2="120" stroke="#000" marker-end="url(#f)"/>
+<text x="170" y="115" text-anchor="middle">1: Vælg "Opret opgave"()</text>
+<line x1="264" y1="156" x2="76" y2="156" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="170" y="151" text-anchor="middle">2: Vis opgaveformular()</text>
+<line x1="76" y1="192" x2="264" y2="192" stroke="#000" marker-end="url(#f)"/>
+<text x="170" y="187" text-anchor="middle">3: Vælg opgavetype()</text>
+<line x1="76" y1="228" x2="264" y2="228" stroke="#000" marker-end="url(#f)"/>
+<text x="170" y="223" text-anchor="middle">4: Indtast beskrivelse, dato og point()</text>
+<line x1="76" y1="322" x2="264" y2="322" stroke="#000" marker-end="url(#f)"/>
+<text x="170" y="317" text-anchor="middle">5: Vælg bestiller()</text>
+<line x1="76" y1="394" x2="264" y2="394" stroke="#000" marker-end="url(#f)"/>
+<text x="170" y="389" text-anchor="middle">6: Tryk "Gem"()</text>
+<line x1="276" y1="546" x2="474" y2="546" stroke="#000" marker-end="url(#f)"/>
+<text x="375" y="541" text-anchor="middle">7: new Faellesopgave(beskrivelse, dato, point)</text>
+<line x1="474" y1="582" x2="276" y2="582" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="375" y="577" text-anchor="middle">8: Opgave oprettet</text>
+<line x1="276" y1="618" x2="794" y2="618" stroke="#000" marker-end="url(#f)"/>
+<text x="535" y="613" text-anchor="middle">9: getAktiveOpgaver().add(opgave)</text>
+<line x1="276" y1="704" x2="474" y2="704" stroke="#000" marker-end="url(#f)"/>
+<text x="375" y="699" text-anchor="middle">10: new GroentTiltag(beskrivelse, dato, point)</text>
+<line x1="474" y1="740" x2="276" y2="740" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="375" y="735" text-anchor="middle">11: Opgave oprettet</text>
+<line x1="276" y1="776" x2="794" y2="776" stroke="#000" marker-end="url(#f)"/>
+<text x="535" y="771" text-anchor="middle">12: getAktiveOpgaver().add(opgave)</text>
+<line x1="276" y1="862" x2="474" y2="862" stroke="#000" marker-end="url(#f)"/>
+<text x="375" y="857" text-anchor="middle">13: new Bytteopgave(beskrivelse, dato, point)</text>
+<line x1="474" y1="898" x2="276" y2="898" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="375" y="893" text-anchor="middle">14: Opgave oprettet</text>
+<line x1="276" y1="934" x2="634" y2="934" stroke="#000" marker-end="url(#f)"/>
+<text x="455" y="929" text-anchor="middle">15: tilføjOpgave(opgave)</text>
+<path d="M646,970 h34 v18 h-28" fill="none" stroke="#000" marker-end="url(#f)"/><text x="686" y="974">16: Kontroller saldo og registrer negativ pointpostering()</text>
+<line x1="634" y1="1014" x2="276" y2="1014" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="455" y="1009" text-anchor="middle">17: Opgave tilføjet</text>
+<line x1="276" y1="1086" x2="794" y2="1086" stroke="#000" marker-end="url(#f)"/>
+<text x="535" y="1081" text-anchor="middle">18: gemData()</text>
+<line x1="806" y1="1122" x2="954" y2="1122" stroke="#000" marker-end="url(#f)"/>
+<text x="880" y="1117" text-anchor="middle">19: gem(data)</text>
+<line x1="954" y1="1158" x2="806" y2="1158" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="880" y="1153" text-anchor="middle">20: Gemning udført</text>
+<line x1="794" y1="1194" x2="276" y2="1194" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="535" y="1189" text-anchor="middle">21: Gemning færdig</text>
+<path d="M276,1230 h34 v18 h-28" fill="none" stroke="#000" marker-end="url(#f)"/><text x="316" y="1234">22: Opdater opgaveoversigt()</text>
+<line x1="264" y1="1274" x2="76" y2="1274" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="170" y="1269" text-anchor="middle">23: Vis opdateret opgaveoversigt()</text>
+<line x1="264" y1="1360" x2="76" y2="1360" stroke="#000" marker-end="url(#o)" stroke-dasharray="6,4"/>
+<text x="170" y="1355" text-anchor="middle">24: Vis fejlbesked()</text>
+</svg>
