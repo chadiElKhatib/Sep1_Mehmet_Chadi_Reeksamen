@@ -14,19 +14,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/*
- * Eksporterer data fra programmet til hjemmesiden (FR13, FR17).
- *
- * Java-programmet skriver kun en datafil: web/data.json.
- * Hjemmesiden (index.html og groenne-tiltag.html) læser filen
- * med JavaScript (kloeverly.js) og viser tallene og de grønne tiltag.
- *
- * Filen indeholder ingen navne, husnumre eller personlige saldi pr. beboer,
- * kun samlede tal og grønne tiltag uden navne (NFR06).
- */
+
 public class WebDataManager
 {
-<<<<<<< Updated upstream
   private static final Path DATAFIL =
       Path.of("src", "main", "resources", "web", "data.json");
 
@@ -39,20 +29,6 @@ public class WebDataManager
   public static void opdaterHjemmeside()
   {
     int antalBeboere = AppData.getBeboere().size();
-=======
-
-  public static void opdaterHjemmeside()
-  {
-    opdaterForside();
-    opdaterGroenneTiltag();
-  }
-
-  private static void opdaterForside()
-  {
-    int antalBeboere =
-        AppData.getBeboere().size();
-
->>>>>>> Stashed changes
     int udfoerteOpgaver = 0;
     int personligePoint = 0;
 
@@ -62,7 +38,6 @@ public class WebDataManager
       personligePoint += beboer.beregnPersonligePoint();
     }
 
-<<<<<<< Updated upstream
     int faellesPoint = AppData.getFaellesPointpulje().beregnSamledePoint();
     List<Opgave> groenneTiltag = findGroenneTiltag();
 
@@ -75,11 +50,6 @@ public class WebDataManager
     json.append("  \"groenneTiltag\": [");
 
     for (int i = 0; i < groenneTiltag.size(); i++)
-=======
-    for (Pointpostering postering :
-        AppData.getFaellesPointpulje()
-            .getPointposteringer())
->>>>>>> Stashed changes
     {
       Opgave tiltag = groenneTiltag.get(i);
       json.append(i == 0 ? "\n" : ",\n");
@@ -152,17 +122,8 @@ public class WebDataManager
     return resultat;
   }
 
-<<<<<<< Updated upstream
-  /*
-   * Gør tekst sikker at sætte ind i JSON,
-   * fx hvis en beskrivelse indeholder anførselstegn.
-   */
+  
   private static String escapeJson(String tekst)
-=======
-  private static String escapeHtml(
-      String tekst
-  )
->>>>>>> Stashed changes
   {
     StringBuilder resultat = new StringBuilder();
 
