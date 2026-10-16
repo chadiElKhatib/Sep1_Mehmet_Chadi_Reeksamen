@@ -1,10 +1,11 @@
 {
   "antalBeboere": 4,
-  "udfoerteOpgaver": 4,
+  "udfoerteOpgaver": 5,
   "personligePoint": 65,
-  "faellesPoint": 20,
+  "faellesPoint": 40,
   "groenneTiltag": [
     { "beskrivelse": "Bag en kage", "dato": "2026-10-16", "point": 10 },
+    { "beskrivelse": "Hjælp i køkkenet", "dato": "2026-10-16", "point": 20 },
     { "beskrivelse": "Slå græs", "dato": "2026-10-13", "point": 10 }
   ]
 }
