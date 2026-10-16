@@ -1,7 +1,7 @@
 {
-  "antalBeboere": 3,
+  "antalBeboere": 4,
   "udfoerteOpgaver": 2,
-  "personligePoint": 10,
+  "personligePoint": 65,
   "faellesPoint": 10,
   "groenneTiltag": [
     { "beskrivelse": "Slå græs", "dato": "2026-10-13", "point": 10 }
